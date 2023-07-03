@@ -4,12 +4,16 @@
       margin: 0;
       padding: 0;
     }
-    h1 {
-      font-family: "letramarca";
-      font-size: 55px;
+    .titulo{
       text-align: center;
-      font-weight: bold;
-      letter-spacing: 5px;
+      a{
+        text-decoration: none;
+        font-family: "$marca";
+        font-size: 55px;
+        font-weight: bold;
+        letter-spacing: 5px;
+        color: black;
+      }
     }
     .subtitulo {
       text-align: center;
@@ -207,7 +211,7 @@
     }
  /* UBICACION */
  .head-mapa {
-  @include ancho-alto(100%,265px);
+  @include ancho-alto(100%,245px);
   .ubicacion-titulo {
       font-family: "$title";
       font-size: 45px;
@@ -216,8 +220,11 @@
     } 
     .piuma{
       text-align: center;
-      font-family: "$marca";
-      font-size: 25px;
+      a{
+          font-family: 25px;
+          font-size: $marca-paginas;
+          color: #000;
+      }
   } 
 }
 .mapa {
@@ -322,8 +329,7 @@ header{
       background-color: #93051889;
       font-size: 12px;
     }
-   
-      .iconos {
+    .iconos {
           display: flex;
           flex-direction: column;
         }
@@ -338,13 +344,17 @@ header{
           background-color:$icono-hover;
         }
       }
-  h1 {
-      font-family: "$marca";
-      font-size: 40px;
-      text-align: center;
-      font-weight: bolder;
-      letter-spacing: 5px;
-    }
+      .titulo{
+        text-align: center;
+        a{
+          text-decoration: none;
+          font-family: "$marca";
+          font-size: 40px;
+          font-weight: bold;
+          letter-spacing: 5px;
+          color: black;
+        }
+      }
     .subtitulo {
       text-align: center;
       font-size: 15px;
@@ -699,7 +709,7 @@ header{
         "nav nav"
         "main main"
         "foot foot";
-    grid-template-rows: 215px 50px;
+    grid-template-rows: 263px 50px;
     grid-template-columns: 180px;
       header{
        grid-area: head;
@@ -768,14 +778,20 @@ header{
         "nav nav"
         "main main"
         "foot foot";
-    grid-template-rows: 215px 50px;
+    grid-template-rows: 263px 50px;
     grid-template-columns: 180px;
   header{
     grid-area: head;
     background-color: $color-head;
     .piuma{
-      font-size: 15px;
-    }
+      text-align: center;
+      a{
+          text-align: center;
+          font-family: 15px;
+          font-size: $marca-paginas;
+          color: #000;
+      }
+  } 
     .sobres-titulo {
       font-family: "$title";
       font-size: 30px;
