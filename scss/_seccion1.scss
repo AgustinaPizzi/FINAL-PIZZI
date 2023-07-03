@@ -36,6 +36,9 @@
         font-family: "$comun";
     }
     .hola {
+        text-decoration: none !important;
+        color: deeppink;
+        font-weight: bold;
         border-right: 1px solid;
         font-size: 30px;
         padding: 10px;

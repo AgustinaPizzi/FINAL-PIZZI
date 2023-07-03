@@ -195,6 +195,9 @@ header .nav-item-icono a:hover {
   font-family: "$comun";
 }
 .contenedoruno .hola {
+  text-decoration: none !important;
+  color: deeppink;
+  font-weight: bold;
   border-right: 1px solid;
   font-size: 30px;
   padding: 10px;
@@ -581,7 +584,7 @@ header .nav-item-icono a:hover {
   font-size: 14px;
 }
 .pagequiensoy .headpages-1 .dropdown-menu a:hover {
-  background-color: rgba(234, 148, 204, 0.9764705882);
+  background-color: rgba(234, 148, 204, 0.9764705882) !important;
   text-align: center;
 }
 

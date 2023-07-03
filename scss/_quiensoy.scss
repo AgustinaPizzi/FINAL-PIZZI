@@ -26,18 +26,14 @@
             font-family: "$comun";
             font-size: 14px;
           }
-          .dropdown-menu{
-            a{
-                &:hover {
-                    background-color: $color-menuppal;
-                    text-align: center;
-                }
+          .dropdown-menu a:hover {
+            background-color: $color-menuppal!important;
+            text-align: center;
+          }
             }
            
-          }
-        
-     }
-}
+        }
+
 .quiensoy {
     @include ancho-alto(100%,1245px);
     background-color: #f6eef5;
