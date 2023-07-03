@@ -1,0 +1,155 @@
+// BOLSOS
+.page{
+      .page{
+        display: grid;
+        width: 100%;
+        grid-template-areas:
+        "head head"
+        "nav nav"
+        "main main"
+        "foot foot";
+        grid-template-rows: 270px 60px;
+        grid-template-columns: 100px;
+      header{
+        grid-area: head;
+        background-color: $color-head;
+
+      }
+      nav{
+        grid-area: nav;
+        height: 65px;
+        background-color: $color-nav; 
+      }
+      main{
+        grid-area: main;
+        display: flex;
+        background-color: $color-main;
+      }
+      }
+      .menupages {
+       @include menupag(absolute,310px)
+      }
+    .piuma{
+      text-align: center;
+        a{
+          color: black;
+          text-align: center;
+          font-family: "$marca";
+          font-size: $marca-paginas;
+        }
+      }
+       .bolsos-titulo {
+        font-family: "$title";
+        font-size: $titulo-paginas;
+        letter-spacing: normal;
+        text-align: center;
+      }
+     .subtitulo-titulos {
+        font-family: "$comun";
+        font-size: $subtitulo-paginas;
+        text-align: center;
+        padding: 20px;
+        font-style: oblique;
+      }
+
+      .container_bolsos {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: stretch;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: #f8e9f2;
+       .bs {
+        display: flex;
+        width: 340px;
+        height: 400px;
+        padding: 60px 40px;
+        border-radius: 15%;
+       }
+        }
+      .nombre-producto{
+        font-size: $name-producto;
+        font-weight: bold;
+        text-align: center;
+        font-family: "$comun";
+       }
+      .precio-producto{
+        text-align: center;
+        font-size: $precio-producto;
+        font-family: "$comun";
+      }
+      .cuotas-producto{
+        text-align: center;
+        font-family: "$comun";
+      }
+    }
+// SOBRES
+.page{
+  .page{
+    display: grid;
+    width: 100%;
+    grid-template-areas:
+    "head head"
+    "nav nav"
+    "main main"
+    "foot foot";
+  grid-template-rows: 270px 60px;
+  grid-template-columns: 100px;
+  
+  header{
+    grid-area: head;
+    background-color: $color-head;
+  }
+  nav{
+    grid-area: nav;
+    height: 65px;
+    background-color: $color-nav;
+  }
+  main{
+    grid-area: main;
+    display: flex;
+    background-color: $color-main;
+  }
+}
+.menupages {
+@include menupag(absolute,310px);
+}
+.sobres-titulo {
+  font-family: "$title";
+  font-size: $titulo-paginas;
+  letter-spacing: normal;
+  text-align: center;
+}
+.subtitulo-titulos {
+  padding: 0px;
+}
+.container_sobres {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #f8e9f2;
+    .s {
+    display: flex;
+    @include ancho-alto(350px,340px);
+    padding: 40px 50px;
+    border-radius: 15%;
+    }
+    .nombre-producto{
+      font-size: $name-producto;
+      font-weight: bold;
+      text-align: center;
+      font-family: "$comun";
+    }
+    .precio-producto{
+      text-align: center;
+      font-size: $precio-producto;
+      font-family: "$comun";
+    }
+    .cuotas-producto{
+      text-align: center;
+      font-family: "$comun";
+    }
+  }
+}

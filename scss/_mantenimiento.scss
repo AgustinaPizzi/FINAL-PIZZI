@@ -1,0 +1,78 @@
+/* MANTEMINIEMTO */
+.page-mantenimiento{
+     header{
+        .iconos {
+            display: flex;
+            flex-direction: column;
+          }
+          .nav-item-icono {
+            background-color: $color-head;
+            padding: 5px;
+            .logearse,.compras,.fav{
+              width: 25px;
+            }
+          }
+          .nav-item-icono a:hover {
+            background-color:$icono-hover;
+          }
+     }
+
+    .mant {
+      text-align: center;
+      a{
+        text-decoration: none;
+        font-family: "$marca";
+        font-size: 75px;
+        text-align: center;
+        font-weight: bold;
+        letter-spacing: 5px;
+        text-align: center;
+        color: black;
+      }
+     }
+        .mensaje- {
+            background-color: #f8e7e9;
+            display: flex;
+            justify-content: center;
+            padding: 28px;
+            border-radius: 10px;
+            margin: 64px auto;
+            max-width: 448px;
+            align-content: center;
+            align-items: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+            .ups {
+                color: black;
+                font-size: 30px;
+                margin: 0;
+                font-weight: bold;
+                text-align: center;
+                .warning-emoji{
+                  width: 48px;
+                  height: 48px;
+                }
+              }
+              .boton {
+                background-color: rgb(241, 106, 181);
+                color: black;
+                border: none;
+                padding: 10px 20px;
+                border-radius: 5px;
+                margin-top: 20px;
+                font-size: 16px;
+                text-decoration: none;
+                cursor: pointer;
+                    &:hover {
+                    background-color: palevioletred;
+                }
+              }
+               
+          }
+        }
+    
+
+
+  
+
+  

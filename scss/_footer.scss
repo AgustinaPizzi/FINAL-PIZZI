@@ -1,0 +1,87 @@
+.footerindex {
+    @include ancho-alto(100%,100%);
+    background-color: $color-foot;
+    .formulario {
+        font-size: 20px;
+        text-align: center;
+        color: rgba(248, 167, 167, 0.8);
+        font-family: "Poppins", sans-serif;
+        letter-spacing: 3px;
+        margin-bottom: 50px;
+    
+    }
+      form .duda p{
+      color: $color-tx-foot;
+      font-weight: bold;
+      padding: 10px;
+    }
+     
+      textarea {
+       @include ancho-alto(350px,50px);
+       
+      }
+      input[type="submit" i] {
+        background-color: #f3225d84;
+        @include ancho-alto(94px,55px);
+        font-weight: bold;
+     
+      }
+      .menufinal {
+        list-style: none;
+        margin: 0;
+        text-align: center;
+        overflow: auto;
+        margin-bottom: 10px;
+
+        li{
+            width: 180px;
+            display: inline-block;
+        }
+        
+       a{
+        text-decoration: none;
+        display: block;
+        font-family: "$comun";
+        font-weight: bold;
+        font-size: 20px;
+        color:$color-tx-foot;
+        border-right: 1px solid;
+        
+      }
+      li a:hover {
+        background-color: $color-menufoot;
+      }
+    }
+    .copy {
+      font-family: "$comun";
+      text-align: center;
+      font-size: 13px;
+      color: black;
+      font-weight: lighter;
+    }
+    .pb-3{
+      font-family: "$comun";
+      text-align: center;
+      font-size: 13px;
+      color: black;
+      font-weight: lighter;
+    }
+  
+    .menumedia {
+    display: flex;
+    justify-content: center;
+      .mm{
+        li {
+          width: 70px;
+          display: inline-block;
+          .correo,.ws,.ig,.tiktok{
+            width: 40px;
+            height: 40px;
+          }
+           }
+        }
+      }
+}
+
+  
+ 
